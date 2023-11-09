@@ -47,6 +47,7 @@ function App() {
     <>
       <h1>Anecdote of the day</h1>
       <div>{anecdotes[selected]}</div>
+      <div>has {points[selected]} votes</div>
       <span>
         <button onClick={handleVote}>vote</button>
         <button onClick={handleClick}>next anecdote</button>
@@ -54,6 +55,7 @@ function App() {
 
       <h1>Anecdote with the most votes</h1>
       <div>{anecdotes[mostVoted]}</div>
+      <div>has {points[mostVoted]} votes</div>
     </>
   );
 }
